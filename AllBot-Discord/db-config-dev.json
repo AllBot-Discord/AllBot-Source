@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "allbot",
+    "database": "allbot",
+    "password": "root",
+    "port": "3306"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "allbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielMaestre/DiscordJS_Bot-Template.git"
+  },
+  "keywords": [],
+  "author": "PINGUIN.ZIP#4931",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielMaestre/DiscordJS_Bot-Template/issues"
+  },
+  "homepage": "https://github.com/GabrielMaestre/DiscordJS_Bot-Template#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cookie-parser": "^1.4.6",
+    "discord.js": "13.1.0",
+    "express": "^4.17.1",
+    "moment": "2.29.1",
+    "mysql2": "2.3.0"
+  }
+}

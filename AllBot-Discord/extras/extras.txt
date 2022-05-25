@@ -1,0 +1,50 @@
+const { MessageEmbed } = require("discord.js");
+
+        const embed = new MessageEmbed()
+        .setColor('#0099ff')
+        .setTitle('Sub Comandos (FebCoin)')
+        .setDescription('Sub-Comandos: '+subcmd)
+        .setThumbnail('https://i.imgur.com/AfFp7pu.png')
+        .setTimestamp()
+        .setFooter('Some footer text here', 'https://i.imgur.com/AfFp7pu.png');
+
+                msg.channel.send({ embeds: [embed] });
+
+// .then(value => {
+    // }).catch(error => {
+    // });
+
+//            setTimeout(() => , 2000);
+// setTimeout(() => msg.delete(), 2000);
+
+
+//----------------------------------MYSQL-START--------------------------------
+
+//IMPORT FROM FILE         const poolSql = require('../config/db/newMember.js');
+
+const mysql = require("mysql2/promise");
+
+const pool = mysql.createPool({
+    host: 'localhost',
+    user: 'root',
+    database: 'allbot',
+    password: 'usbw',
+    port: '3306',
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+});
+
+async function exibirConta(cmd) {
+            pool.query(cmd)
+            .then(function(rows, fields) {
+            })
+            .catch(err => {
+                console.error(err);
+                })
+
+}
+
+
+module.exports = { exibirConta }
+//----------------------------------MYSQL-FIM--------------------------------
